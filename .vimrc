@@ -1,22 +1,22 @@
-set shiftwidth=4
-set expandtab
-set softtabstop=4
 set autoindent
+set backspace=2
 set backspace=indent
+set encoding=utf8
+set expandtab
+set exrc
+set lbr
+set nocompatible
 set noerrorbells
 set novisualbell
+set number
+set ruler
+set secure
+set shiftwidth=4
+set showmode
+set softtabstop=4
 set t_vb=
 set tm=500
-set encoding=utf8
-set lbr
 set tw=500
-set ruler
-set number
-set backspace=2
-set exrc
-set secure
-set nocompatible              " be iMproved, required
-set showmode
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
