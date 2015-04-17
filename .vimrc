@@ -13,17 +13,26 @@ set tw=500
 set ruler
 set number
 set backspace=2
-
-syntax enable
+set exrc
+set secure
+set nocompatible              " be iMproved, required
+set showmode
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-set showmode
+
+" Unbind the cursor keys in insert, normal and visual modes.
+for prefix in ['i', 'n', 'v']
+    for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+        exe prefix . "noremap " . key . " <Nop>"
+    endfor
+endfor
+
+syntax enable
 
 cmap w!! w !sudo tee % > /dev/null
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off 
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
