@@ -40,6 +40,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'msanders/snipmate.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
