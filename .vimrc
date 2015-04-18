@@ -15,6 +15,7 @@ set shiftwidth=4
 set showmode
 set softtabstop=4
 set t_vb=
+set tags+=~/.vim/tags
 set tm=500
 set tw=500
 
@@ -39,9 +40,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'msanders/snipmate.vim'
+Plugin 'OmniCppComplete'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,3 +58,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
+
+
+let OmniCpp_MayCompleteScope = 1
