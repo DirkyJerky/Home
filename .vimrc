@@ -23,7 +23,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 " Unbind the cursor keys in insert, normal and visual modes.
-for prefix in ['i', 'n', 'v']
+for prefix in ['n', 'v']
     for key in ['<Up>', '<Down>', '<Left>', '<Right>']
         exe prefix . "noremap " . key . " <Nop>"
     endfor
@@ -41,8 +41,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'msanders/snipmate.vim'
-Plugin 'OmniCppComplete'
+Plugin 'Rip-Rip/clang_complete'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
