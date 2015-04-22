@@ -58,5 +58,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 
-
 let OmniCpp_MayCompleteScope = 1
+
+let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+if isdirectory(s:clang_library_path)
+    let g:clang_library_path=s:clang_library_path
+endif
