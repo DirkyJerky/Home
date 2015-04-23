@@ -2,14 +2,11 @@
 	name = Geoff Yoerger
 	email = geoffreyiy1@gmail.com
 [credential]
-	helper = osxkeychain
+	helper = !'C:\\Users\\yoerggeo000\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
 [core]
 	pager = less -x4
-	excludesfile = /Users/Geoff/.gitignore_global
-	editor = /usr/bin/vim
-	#editor = open -W -n
-[merge]
-	tool = kdiff3
+	excludesfile = ~/.gitignore_global
+	editor = vim
 [help]
 	autocorrect = 1
 [color]
@@ -32,12 +29,6 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [push]
 	default = upstream
 [pull]
