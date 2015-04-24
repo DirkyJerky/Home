@@ -5,7 +5,7 @@
 	helper = osxkeychain
 [core]
 	pager = less -x4
-	excludesfile = /Users/Geoff/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
 	#editor = open -W -n
 [merge]
