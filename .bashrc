@@ -1,3 +1,4 @@
+alias ccat="ccat --bg dark"
 export GOPATH="${HOME}/golang"
 
 export BASE_LSCOLORS=ExFxCxDxBxegedabagacad

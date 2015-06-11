@@ -1,0 +1,11 @@
+ps ax|grep [S]creenSaverEngine > /dev/null
+if [ "$?" != "0" ] ; then
+    # screen saver is not active
+
+    afplay /System/Library/PrivateFrameworks/ScreenReader.framework/Resources/Sounds/WrapForwardHard.aiff;
+    afplay /System/Library/PrivateFrameworks/ScreenReader.framework/Resources/Sounds/WrapForwardHard.aiff;
+    afplay /System/Library/PrivateFrameworks/ScreenReader.framework/Resources/Sounds/WrapForwardHard.aiff;
+else
+    # screen saver is active
+    true;
+fi
