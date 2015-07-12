@@ -23,8 +23,8 @@ export PATH="${HOME}/bin:${PATH}"
 
 case `uname` in
     Darwin)
-        if [ -f $(brew --prefix)/etc/bash_completion ]; then
-            . $(brew --prefix)/etc/bash_completion
+        if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+                . $(brew --prefix)/share/bash-completion/bash_completion
         fi
 
         export CLICOLOR=1
