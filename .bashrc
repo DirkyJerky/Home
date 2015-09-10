@@ -5,6 +5,9 @@ export BASE_LSCOLORS=ExFxCxDxBxegedabagacad
 
 export EDITOR="vim"
 
+# But i dont like emacs :(
+set -o emacs
+
 export PS1="\\[$(tput setab 4)$(tput setaf 1)\\]"'{\w}'"\\[$(tput sgr0)"'$(~/etc/ps1_exitstatus $?)'"$(tput bold)\\]"'\$'"\\[$(tput sgr0)\\] "
 export PS2="\\[$(tput setab 4)$(tput setaf 1)\\]"'>'"\\[$(tput sgr0)\\]"
 
@@ -37,4 +40,6 @@ case `uname` in
 
         ;;
 esac
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
