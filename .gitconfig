@@ -2,8 +2,7 @@
 	name = Geoff Yoerger
 	email = geoffreyiy1@gmail.com
 [credential]
-	helper = winstore
-	helper = osxkeychain
+	helper = crossplatform
 [core]
 	pager = less -x4
 	excludesfile = ~/.gitignore_global
