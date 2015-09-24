@@ -84,7 +84,7 @@
 	gr = grep -Ii
 	gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
 	grep = grep -Ii
-        hub = "!sh ~/etc/git_hub.sh"
+        hub = "!bash -c '~/etc/git_hub.sh $1 $2'" -
 	k = !gitk
 	lap = "!f() { git --git-dir=$1 format-patch -k -1 --stdout $2 | git am -3 -k; }; f"
 	lasttag = describe --tags --abbrev=0
