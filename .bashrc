@@ -34,9 +34,10 @@ case `uname` in
         export LSCOLORS=${BASE_LSCOLORS}
         ;;
 
-    Cygwin)
+    CYGWIN*)
         export CLICOLOR=1
         export LSCOLORS=${BASE_LSCOLORS}
+        export DISPLAY=:0.0
 
         ;;
 esac
