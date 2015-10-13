@@ -19,16 +19,20 @@ set tags+=~/.vim/tags
 set tm=500
 set tw=500
 
+" Set F2 to toggle paste mode in I-mode
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
+" LEARNING
 " Unbind the cursor keys in insert, normal and visual modes.
+" Because hjkl is way better
 for prefix in ['n', 'v']
     for key in ['<Up>', '<Down>', '<Left>', '<Right>']
         exe prefix . "noremap " . key . " <Nop>"
     endfor
 endfor
 
+" Syntax highlighting
 syntax enable
 
 cmap w!! w !sudo tee % > /dev/null
