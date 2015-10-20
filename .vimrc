@@ -44,7 +44,7 @@ set textwidth=500 " Max characters in line
 set foldenable " Enable folding
 set foldlevelstart=10 " Open most folds
 set foldnestmax=10 " Max nested folds
-set foldmethod=indent
+set foldmethod=syntax
 " }}}
 
 " }}}
