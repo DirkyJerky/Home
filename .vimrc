@@ -102,6 +102,7 @@ endfor
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>s :mksession<CR>
+nnoremap <leader>c :SyntasticToggle<CRv
 nnoremap <space> za
 
 " Syntax highlighting
@@ -126,6 +127,7 @@ Plugin 'scrooloose/syntastic' " Syntax checking using local tools
 Plugin 'flazz/vim-colorschemes' " Many colors
 Plugin 'sjl/gundo.vim' "Gundo
 Plugin 'rking/ag.vim' "The Silver Searcher for vim
+Plugin 'rust-lang/rust.vim' "Rust integration
 
 " Postrequisites {{{
 call vundle#end()            " required
